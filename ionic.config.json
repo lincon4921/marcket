@@ -1,0 +1,7 @@
+{
+  "name": "marcket",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
