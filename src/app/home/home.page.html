@@ -1,6 +1,13 @@
 <ion-header>
   <ion-toolbar color="dark">
-    <ion-title size="large" style="margin: 1.5%;text-align: center ;">ZN marcket</ion-title>
+    <ion-title size="large" class="ion-text-center ion-align-items-center">ZNmarcket</ion-title>
+    <ion-card slot="end" color="dark">
+        <ion-button  (click)="openAddProduto()"color="dark">
+            <ion-icon slot="icon-only" name="duplicate-sharp"></ion-icon>
+           <span class="ion-hide-sm-down" style="padding-left: 3%"> Adicionar um produto</span>
+          </ion-button>
+    </ion-card>
+
   </ion-toolbar>
 
 </ion-header>

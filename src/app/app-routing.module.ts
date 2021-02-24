@@ -9,7 +9,16 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  }
+  },
+  {
+    path: 'add-produto',
+    loadChildren: () => import('./add-produto/add-produto.module').then( m => m.AddProdutoPageModule)
+  },
+  {
+    path: 'modal',
+    loadChildren: () => import('./modal/modal.module').then( m => m.ModalPageModule)
+  },
+ 
 ];
 @NgModule({
   imports: [
