@@ -11,7 +11,6 @@
 </ion-header>
 
 <ion-content>
- 
 
   <!--aplicar foto -->
 
@@ -27,23 +26,30 @@
           <ion-label position="stacked">Quantidade</ion-label>
           <ion-input></ion-input>
         </ion-item>
-        <ion-item>
-            <ion-label position="stacked">Fornecedor</ion-label>
-            <ion-input></ion-input>
-          </ion-item>
+           
+       <ion-item>
+          <ion-label>Data de fabricação</ion-label>
+          <ion-datetime display-format="DD.MMMM.YY"></ion-datetime>
+        </ion-item>
+        
+       <ion-item>
+         <ion-label>Validade</ion-label>
+         <ion-datetime display-format="DD.MMMM.YYYY"></ion-datetime>
+       </ion-item>
       <ion-item>
           <ion-label position="stacked">Fornecedor</ion-label>
           <ion-input></ion-input>
         </ion-item>
         
+         <ion-button (click)="showModal()" expand="block" fill="clear" shape="round" color="dark">
+           Localização
+         </ion-button>
 
-          <ion-item>
-              <ion-label position="stacked">localização</ion-label>
-              <ion-input></ion-input>
-            </ion-item>
+         <ion-button  expand="block" fill="clear" shape="round" color="primary">
+            Registrar Produto
+          </ion-button>
+            
          
        
-<ion-button (click)="openModal()" expand="block" fill="clear" shape="round">
-  Click me
-</ion-button>
+
 </ion-content>

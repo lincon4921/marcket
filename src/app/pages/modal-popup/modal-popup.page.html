@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Localização</ion-title>
+  <ion-buttons slot="end">
+    <ion-button (click)="closeModal()">X</ion-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+<form padding>
+<ion-item>
+  <ion-label position="floating">CEP</ion-label>
+  <ion-input type="text" placeholder="informe o seu CEP" pattern="\d*" name="cep" [(ngModel)]="cep" (change)="buscaEndereco()" aria-required="required" required></ion-input>
+</ion-item>
+<ion-item>
+    <ion-label position="floating">Logradoruro</ion-label>
+    <ion-input type="text" placeholder="informe o seu Logradoruro" aria-required="required" required></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label position="floating">Bairro</ion-label>
+      <ion-input type="text" placeholder="informe o seu Bairro" aria-required="required" required></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating">cidade</ion-label>
+        <ion-input type="text" placeholder="informe o sua cidade" aria-required="required" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label position="floating">Estado</ion-label>
+          <ion-input type="text" placeholder="informe o seu Estado" aria-required="required" required></ion-input>
+        </ion-item>
+        <ion-button  expand="block" fill="clear" shape="round" color="primary">
+            salvar
+          </ion-button>
+        
+
+</form>
+</ion-content>
